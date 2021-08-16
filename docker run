@@ -13,3 +13,5 @@ docker run
     docker container restart prometheus  
 
     docker container stop prometheus   
+
+    npm install
