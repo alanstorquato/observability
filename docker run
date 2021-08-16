@@ -1,0 +1,15 @@
+docker run
+    --name prometheus
+    --rm
+    -d
+    -p 9090:9090
+    -v /Users/alan.torquato/Projects/observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    prom/prometheus
+
+    docker run --name prometheus --rm -d -p 9090:9090 -v /Users/alan.torquato/Projects/observability/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+
+    docker run --name prometheus --rm -d -p 9090:9090 prom/prometheus
+
+    docker container restart prometheus  
+
+    docker container stop prometheus   
